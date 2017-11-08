@@ -1,0 +1,20 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Include:
+    - 'gemfiles/Gemfile*'
+  Exclude:
+    - 'has_public_id.gemspec'
+    - 'gemfiles/Gemfile*.lock'
+    - 'bin/*'
+    - 'vendor/bundle/**/*'
+    - test/dummy/**/*
+
+Metrics/LineLength:
+  Max: 120
+
+Rails:
+  Enabled: true
+
+Style/FrozenStringLiteralComment:
+  Enabled: false

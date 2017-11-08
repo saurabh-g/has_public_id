@@ -3,7 +3,7 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 Bundler.require(*Rails.groups)
-require "has_public_id"
+require 'has_public_id'
 
 module Dummy
   class Application < Rails::Application
@@ -20,4 +20,3 @@ module Dummy
     # config.i18n.default_locale = :de
   end
 end
-
